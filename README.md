@@ -101,6 +101,7 @@ Phase の詳細な目的、開始・完了条件、依存関係は、後続で�
 | --- | --- | --- |
 | Repository README | プロジェクト概要と主要情報への入口 | 本文書 |
 | プロジェクト憲章 | 背景、目的、定義、原則、スコープ、成功状態の詳細 | [`docs/00_project/charter.md`](docs/00_project/charter.md) |
+| 文書管理ルール | 情報種別ごとの正本、更新責任、参照・同期ルール | [`docs/00_project/document-governance.md`](docs/00_project/document-governance.md) |
 | GitHub Issues | Phase、成果物、実装作業の計画と完了条件 | [Issues](https://github.com/yuyuyu0706/data-value-scaling/issues) |
 | GitHub Project | 現在の重点と進捗の管理 | [Projects](https://github.com/users/yuyuyu0706/projects/6/views/1) |
 | Pull Requests | 成果物の変更、レビュー、変更理由の履歴 | [Pull requests](https://github.com/yuyuyu0706/data-value-scaling/pulls) |
@@ -124,4 +125,5 @@ Phase の詳細な目的、開始・完了条件、依存関係は、後続で�
 - [プロジェクト憲章と README を整備する（Issue #2）](https://github.com/yuyuyu0706/data-value-scaling/issues/2)
 - [Repository README を整備する（Issue #5）](https://github.com/yuyuyu0706/data-value-scaling/issues/5)
 - [プロジェクト憲章 Draft v0.1](docs/00_project/charter.md)
+- [文書管理ルール Draft v0.1](docs/00_project/document-governance.md)
 - [GitHub Project](https://github.com/users/yuyuyu0706/projects/6/views/1)
