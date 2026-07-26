@@ -23,7 +23,7 @@
 3. 実装や文書変更の差分とレビュー履歴は、Issue に関連付けられた Pull Request で確認します。
 4. 次の作業は、現在の Phase と親 Issue の残アクティビティを起点に判断します。
 
-Project に存在しない View や未作成の文書を前提にせず、具体的な作業状況は常に Issue を正として確認してください。
+Project に存在しない View や未作成の文書を前提にせず、現在のステータス・重点・全体進捗は Project View、目的・対象範囲・完了条件・依存関係は対応する Issue を正として確認してください。
 
 ## Issue 階層
 
@@ -40,10 +40,13 @@ Project に存在しない View や未作成の文書を前提にせず、具体
 | --- | --- |
 | プロジェクト概要、主要 KPI・モデル、Phase 全体像 | [Repository README](https://github.com/yuyuyu0706/data-value-scaling#readme) |
 | 背景、定義、基本原則、対象範囲、成功状態 | [プロジェクト憲章 Draft v0.1](https://github.com/yuyuyu0706/data-value-scaling/blob/main/docs/00_project/charter.md) |
+| 情報種別ごとの正本、更新責任、参照・同期ルール | [文書管理ルール Draft v0.1](https://github.com/yuyuyu0706/data-value-scaling/blob/main/docs/00_project/document-governance.md) |
 | Phase、成果物、作業単位、完了条件 | [Issues](https://github.com/yuyuyu0706/data-value-scaling/issues) |
 | 現在の重点と進捗 | [GitHub Project](https://github.com/users/yuyuyu0706/projects/6/views/1) |
 | 変更差分、レビュー、変更理由の履歴 | [Pull requests](https://github.com/yuyuyu0706/data-value-scaling/pulls) |
 
-## 更新に関する引継ぎ
+## 更新と Repository 原稿との同期
 
-この README では、現在の Phase、主要作業、確認先だけを更新対象とし、プロジェクトの安定情報や詳細な進捗は複製しません。最終的な正本の置き場所、更新責任者、更新頻度、および重点を切り替える条件は、後続の文書管理に関する Issue で決定します。
+この README では、現在の Phase、主要作業、確認先だけを更新対象とし、プロジェクトの安定情報や詳細な進捗は複製しません。
+
+Repository の [`docs/00_project/github-project-readme.md`](https://github.com/yuyuyu0706/data-value-scaling/blob/main/docs/00_project/github-project-readme.md)をレビュー可能な正本とし、GitHub Project 本体の README は公開コピーとして扱います。原稿の変更を Pull Request でレビューした後、Project 本体へ手動反映し、表示内容とリンクの一致を確認して、対応 Issue または Pull Request に同期結果を記録します。詳細な手順は[文書管理ルール](https://github.com/yuyuyu0706/data-value-scaling/blob/main/docs/00_project/document-governance.md#6-github-project-readme-の手動同期)を参照してください。
