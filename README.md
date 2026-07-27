@@ -102,11 +102,17 @@ Phase の詳細な目的、開始・完了条件、依存関係は、後続で�
 | Repository README | プロジェクト概要と主要情報への入口 | 本文書 |
 | プロジェクト憲章 | 背景、目的、定義、原則、スコープ、成功状態の詳細 | [`docs/00_project/charter.md`](docs/00_project/charter.md) |
 | 文書管理ルール | 情報種別ごとの正本、更新責任、参照・同期ルール | [`docs/00_project/document-governance.md`](docs/00_project/document-governance.md) |
+| Repository 構成ガイド | 物理配置、領域の責務境界、構成変更の判断基準 | [`docs/00_project/repository-structure.md`](docs/00_project/repository-structure.md) |
+| 管理文書 | `docs/` 領域の利用案内 | [`docs/README.md`](docs/README.md) |
+| 意思決定記録 | `decisions/` 領域の利用案内と現在の運用状態 | [`decisions/README.md`](decisions/README.md) |
+| 指標・共通定義 | `definitions/` 領域の利用案内 | [`definitions/README.md`](definitions/README.md) |
+| データ | `data/` 領域の利用案内と安全条件 | [`data/README.md`](data/README.md) |
+| 分析 | `analytics/` 領域の利用案内 | [`analytics/README.md`](analytics/README.md) |
 | GitHub Issues | Phase、成果物、実装作業の計画と完了条件 | [Issues](https://github.com/yuyuyu0706/data-value-scaling/issues) |
 | GitHub Project | 現在の重点と進捗の管理 | [Projects](https://github.com/users/yuyuyu0706/projects/6/views/1) |
 | Pull Requests | 成果物の変更、レビュー、変更理由の履歴 | [Pull requests](https://github.com/yuyuyu0706/data-value-scaling/pulls) |
 
-ロードマップ、運営モデル、指標定義、意思決定記録などは後続 Issue で作成予定です。実体が追加されるまでは、この README からリンクしません。
+上表の各領域 README は追加済みの利用案内です。個別のロードマップ、運営モデル、指標定義、Decision Record、データ、分析成果物は未作成であり、実体が追加されるまではこの README からリンクしません。
 
 ## Issue 階層と開発の進め方
 
@@ -125,5 +131,6 @@ Phase の詳細な目的、開始・完了条件、依存関係は、後続で�
 - [プロジェクト憲章と README を整備する（Issue #2）](https://github.com/yuyuyu0706/data-value-scaling/issues/2)
 - [Repository README を整備する（Issue #5）](https://github.com/yuyuyu0706/data-value-scaling/issues/5)
 - [プロジェクト憲章 Draft v0.1](docs/00_project/charter.md)
-- [文書管理ルール Draft v0.1](docs/00_project/document-governance.md)
+- [文書管理ルール Draft v0.2](docs/00_project/document-governance.md)
+- [Repository 構成ガイド Draft v0.2](docs/00_project/repository-structure.md)
 - [GitHub Project](https://github.com/users/yuyuyu0706/projects/6/views/1)

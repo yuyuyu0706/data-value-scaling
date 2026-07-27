@@ -1,6 +1,6 @@
 # データ活用スケーリング計画 文書管理ルール
 
-> **文書版:** Draft v0.1
+> **文書版:** Draft v0.2
 >
 > **位置付け:** 本文書は、プロジェクトの情報種別ごとの正本（Source of Truth）、更新方法、参照方向を定める正本です。文書の新設・変更時は本ルールを適用します。
 
@@ -17,6 +17,8 @@
 | プロジェクトの背景・目的・主要概念・原則・対象範囲・成功状態 | [`charter.md`](charter.md) | 長期的で安定した判断基準 | 当該変更の Issue 担当者 | 目的、原則、スコープ、主要な定義または成功状態の合意変更 | Repository README、設計文書、Issue |
 | プロジェクト概要と主要情報への入口 | [`README.md`](../../README.md) | 憲章の要約、主要モデルと Phase の概観、存在する成果物への導線 | 入口または成果物を変更する Issue 担当者 | 主要な参照先、全体像、現在 Phase の変更 | Repository トップ |
 | 文書管理ルール | 本文書 | 正本、責務、更新・レビュー・参照・同期の共通ルール | 文書管理を変更する Issue 担当者 | 情報種別、正本、配置、参照または運用方法の変更 | Repository README、GitHub Project README、各成果物 |
+| Repository の物理配置と領域の責務境界 | [`repository-structure.md`](repository-structure.md) | 現在の構成、配置判断、命名、構成変更基準 | Repository 構成を変更する Issue 担当者 | 領域、配置、命名または構成変更基準の変更 | Repository README、各領域 README、成果物追加 Issue |
+| 各領域のローカルな利用案内 | [`docs/README.md`](../README.md)、[`decisions/README.md`](../../decisions/README.md)、[`definitions/README.md`](../../definitions/README.md)、[`data/README.md`](../../data/README.md)、[`analytics/README.md`](../../analytics/README.md) | 領域の目的、配置対象・対象外、利用開始時の確認先（上位ルールは再定義しない） | 当該領域を変更する Issue 担当者 | 領域の利用方法、主要な参照先または実装状態の変更 | Repository README、当該領域の利用者 |
 | Phase・成果物・作業の目的、対象範囲、完了条件、依存関係、実施判断 | 対応する GitHub Issue | 実施前後の計画と完了判断 | Issue 担当者 | 起票、スコープ・依存関係・判断・完了状態の変更 | 親子 Issue、Project View、Pull Request |
 | 現在の重点・ステータス・全体進捗 | [GitHub Project View](https://github.com/users/yuyuyu0706/projects/6/views/1) | Issue を横断した変動状態の表示 | Project 運営担当者または Issue 担当者 | Issue の着手、状態変更、優先対象の切替 | GitHub Project README、Repository README |
 | 成果物の差分・レビュー・変更理由 | 対応する Pull Request | 正本を変更する差分とレビュー履歴 | Pull Request 作成者・レビュアー | 成果物の変更、レビュー指摘、マージ判断 | Issue、Git 履歴 |
@@ -24,7 +26,7 @@
 | GitHub Project に表示する利用案内 | GitHub Project 本体の README | Repository 原稿の公開コピー（独自情報は持たない） | 原稿を変更する Pull Request の作成者または引継ぎ先 | Repository 原稿の変更がレビューされた後 | GitHub Project 利用者 |
 | 永続的で複数成果物へ影響する設計判断 | Decision Record（整備後） | 判断、選択肢、理由、影響 | 判断を行う Issue 担当者 | 永続的な横断判断の合意 | Issue、設計文書、Pull Request |
 
-ロードマップ、運営モデル、指標定義など未作成の成果物は、配置と正本が確定していません。後続 Issue で目的、利用者、更新責任、既存の正本との境界を決め、実体が `main` に追加された後にこの表と入口文書へ追記します。
+5 領域の案内 README は追加済みですが、個別のロードマップ、運営モデル、指標定義、Decision Record、データ、分析成果物は未作成です。後続 Issue で目的、利用者、更新責任、既存の正本との境界を決め、実体が `main` に追加された後にこの表と入口文書へ追記します。
 
 Decision Record の仕組みが整備されるまでは、永続的で複数成果物へ影響する判断を、関連 Issue の「重要な設計判断・論点」に理由と影響先を添えて記録します。将来の配置、テンプレート、採番方式を本 Draft では固定しません。
 
@@ -45,7 +47,7 @@ Decision Record の仕組みが整備されるまでは、永続的で複数成�
 
 1. Issue で成果物の目的、利用者、扱う情報、既存の正本との境界、更新責任と更新契機を定義します。
 2. 既存の正本と重複する場合は新設せず、既存文書の更新または要約とリンクで解決できないか確認します。
-3. 配置は後続のリポジトリ構成設計に従います。未確定のディレクトリを本ルールだけで先行作成しません。
+3. 配置は [Repository 構成ガイド](repository-structure.md) に従います。構成ガイドで未確定のディレクトリを、本ルールだけで先行作成しません。
 4. Pull Request で実体をレビューし、`main` へ追加された後に本文書の正本一覧と必要な入口へリンクを追加します。
 
 ### 4.2 重複と要約

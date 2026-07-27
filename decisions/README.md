@@ -44,3 +44,8 @@ Decision Record の正式な仕組みは未整備です。テンプレート、�
 7. Issue の暫定記録を移行または参照する方法
 
 合意後は、同じ判断を一般文書へ複製せず、必要最小限の要約から Decision Record を相対リンクで参照します。
+
+## 関連する入口
+
+- [Repository トップ](../README.md)
+- [管理文書](../docs/README.md)
