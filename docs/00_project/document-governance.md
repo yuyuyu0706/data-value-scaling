@@ -1,6 +1,6 @@
 # データ活用スケーリング計画 文書管理ルール
 
-> **文書版:** Draft v0.2
+> **文書版:** Draft v0.3
 >
 > **位置付け:** 本文書は、プロジェクトの情報種別ごとの正本（Source of Truth）、更新方法、参照方向を定める正本です。文書の新設・変更時は本ルールを適用します。
 
@@ -18,6 +18,8 @@
 | プロジェクト概要と主要情報への入口 | [`README.md`](../../README.md) | 憲章の要約、主要モデルと Phase の概観、存在する成果物への導線 | 入口または成果物を変更する Issue 担当者 | 主要な参照先、全体像、現在 Phase の変更 | Repository トップ |
 | 文書管理ルール | 本文書 | 正本、責務、更新・レビュー・参照・同期の共通ルール | 文書管理を変更する Issue 担当者 | 情報種別、正本、配置、参照または運用方法の変更 | Repository README、GitHub Project README、各成果物 |
 | Repository の物理配置と領域の責務境界 | [`repository-structure.md`](repository-structure.md) | 現在の構成、配置判断、命名、構成変更基準 | Repository 構成を変更する Issue 担当者 | 領域、配置、命名または構成変更基準の変更 | Repository README、各領域 README、成果物追加 Issue |
+| Issue・Pull Request の管理ルール | [`issue-pr-management.md`](issue-pr-management.md) | Issue 階層と分割、Issue・Pull Request のライフサイクル、関連付け、状態管理 | Issue・Pull Request 運用を変更する Issue 担当者 | 階層、ライフサイクル、関連付けまたは状態管理の変更 | Repository README、Issue・Pull Request、テンプレート |
+| Issue・Pull Request テンプレート | [`.github/ISSUE_TEMPLATE/`](../../.github/ISSUE_TEMPLATE/)、[`.github/pull_request_template.md`](../../.github/pull_request_template.md) | 起票・作成時の入力補助と記載漏れ防止（共通ルールは含めない） | Issue・Pull Request 運用を変更する Issue 担当者 | 管理ルールまたは必要な入力項目の変更 | Issue・Pull Request 作成者 |
 | 各領域のローカルな利用案内 | [`docs/README.md`](../README.md)、[`decisions/README.md`](../../decisions/README.md)、[`definitions/README.md`](../../definitions/README.md)、[`data/README.md`](../../data/README.md)、[`analytics/README.md`](../../analytics/README.md) | 領域の目的、配置対象・対象外、利用開始時の確認先（上位ルールは再定義しない） | 当該領域を変更する Issue 担当者 | 領域の利用方法、主要な参照先または実装状態の変更 | Repository README、当該領域の利用者 |
 | Phase・成果物・作業の目的、対象範囲、完了条件、依存関係、実施判断 | 対応する GitHub Issue | 実施前後の計画と完了判断 | Issue 担当者 | 起票、スコープ・依存関係・判断・完了状態の変更 | 親子 Issue、Project View、Pull Request |
 | 現在の重点・ステータス・全体進捗 | [GitHub Project View](https://github.com/users/yuyuyu0706/projects/6/views/1) | Issue を横断した変動状態の表示 | Project 運営担当者または Issue 担当者 | Issue の着手、状態変更、優先対象の切替 | GitHub Project README、Repository README |
@@ -38,8 +40,9 @@ Decision Record の仕組みが整備されるまでは、永続的で複数成�
 - **Project View** は現在状態を表示します。目的や完了条件を再記述せず、対応する Issue を参照します。
 - **Issue** は実施単位の計画と完了判断を管理します。成果物本文や差分を複製せず、ファイルと Pull Request を参照します。
 - **Pull Request** は差分、レビュー、変更理由を残します。固定的な説明の正本にはせず、マージ後の有効な内容は成果物から読めるようにします。
+- **Issue・Pull Request テンプレート** は入力補助と記載漏れ防止のために使用します。共通ルールを再定義せず、[Issue・Pull Request 管理ルール](issue-pr-management.md) を参照します。
 
-参照方向は、原則として **入口 → 正本、変動状態 → 計画、変更履歴 → 変更後の成果物** とします。正本側から入口の要約へ戻って内容を補完する構造にはしません。
+参照方向は、原則として **入口 → 正本、Project View → Issue、Issue → 成果物と Pull Request、Pull Request → Issue と変更対象、テンプレート → Issue・Pull Request 管理ルール** とします。正本側から入口の要約へ戻って内容を補完する構造にはしません。
 
 ## 4. 文書の追加・更新ルール
 

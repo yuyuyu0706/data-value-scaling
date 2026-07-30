@@ -1,6 +1,6 @@
 # データ活用スケーリング計画 Repository 構成ガイド
 
-> **文書版:** Draft v0.2
+> **文書版:** Draft v0.3
 >
 > **位置付け:** 本文書は、Repository 内の物理配置、各領域の責務境界、および構成変更の判断基準を定める正本です。情報種別ごとの正本、更新責任、参照方向は `document-governance.md` に従います。
 
@@ -17,12 +17,20 @@ Repository の入口はルートの `README.md`、情報の正本・更新・参
 ```text
 .
 ├── README.md
+├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   │   ├── lv1_issue.md
+│   │   ├── lv2_issue.md
+│   │   ├── lv3_issue.md
+│   │   └── lv4_issue.md
+│   └── pull_request_template.md
 ├── docs/
 │   ├── README.md
 │   └── 00_project/
 │       ├── charter.md
 │       ├── document-governance.md
 │       ├── github-project-readme.md
+│       ├── issue-pr-management.md
 │       └── repository-structure.md
 ├── decisions/
 │   └── README.md
@@ -34,19 +42,27 @@ Repository の入口はルートの `README.md`、情報の正本・更新・参
     └── README.md
 ```
 
-上記は現在存在する成果物です。5 領域の案内 README は実装済みですが、個別の指標定義、Decision Record、データ、分析成果物は未作成です。既存リンクと正本を維持するため、既存ファイルは移動・改名しません。
+上記は現在存在する成果物です。Issue・Pull Request テンプレートと 5 領域の案内 README は実装済みですが、個別の指標定義、Decision Record、データ、分析成果物は未作成です。既存リンクと正本を維持するため、既存ファイルは移動・改名しません。
 
 ### 2.2 Phase 1 開始時の初期構成
 
 ```text
 .
 ├── README.md
+├── .github/                              # Issue・Pull Request テンプレートは実装済み
+│   ├── ISSUE_TEMPLATE/
+│   │   ├── lv1_issue.md
+│   │   ├── lv2_issue.md
+│   │   ├── lv3_issue.md
+│   │   └── lv4_issue.md
+│   └── pull_request_template.md
 ├── docs/
 │   ├── README.md                         # 実装済み
 │   └── 00_project/                       # 既存、維持
 │       ├── charter.md
 │       ├── document-governance.md
 │       ├── github-project-readme.md
+│       ├── issue-pr-management.md
 │       └── repository-structure.md
 ├── decisions/
 │   └── README.md                         # 実装済み（個別記録は未整備）
@@ -54,15 +70,11 @@ Repository の入口はルートの `README.md`、情報の正本・更新・参
 │   └── README.md                         # 実装済み（個別定義は未作成）
 ├── data/
 │   └── README.md                         # 実装済み（個別データは未作成）
-├── analytics/
-│   └── README.md                         # 実装済み（個別分析は未作成）
-└── .github/                              # 別 Lv2 で必要時に実装
-    ├── ISSUE_TEMPLATE/
-    ├── pull_request_template.md
-    └── workflows/
+└── analytics/
+    └── README.md                         # 実装済み（個別分析は未作成）
 ```
 
-5 領域とその README は実装済みです。`.github/` は別 Lv2 の配置計画であり、未作成のファイルやディレクトリが現在存在することを示すものではありません。空ディレクトリや将来用の空ファイルは作らず、担当 Issue で必要な実体とともに追加します。例示した `.github/` 配下も名称を含めて確定実装ではありません。
+Issue・Pull Request テンプレートと 5 領域の案内 README は実装済みです。`.github/workflows/`、`CODEOWNERS`、Rulesets などの未実装設定は現在構成に含めません。空ディレクトリや将来用の空ファイルは作らず、後続 Issue で必要性と運用方式を決めた実体だけを追加します。
 
 ## 3. 領域ごとの責務
 
@@ -73,7 +85,7 @@ Repository の入口はルートの `README.md`、情報の正本・更新・参
 | [`definitions/`](../../definitions/README.md) | 指標、用語、データモデル、算定式など、再利用する定義 | プロジェクト方針、実データ、分析結果、Notebook | 合意済み定義の正本を置く。概要文書は定義を複製せず参照する | 案内 README は実装済み。対象、形式、検証方法、所有者、更新契機が決まった定義から追加する |
 | [`data/`](../../data/README.md) | 再現可能な分析に必要で、Repository での保持が承認された小規模データ、サンプル、スキーマ、取得・生成手順 | 機密・個人・資格情報、ライセンス不明データ、大容量データ、無管理の生成物 | 原データの正本とは限らない。外部正本がある場合は由来と取得方法を記録する | 案内 README は実装済み。機密性、ライセンス、容量、保持期間、Git 管理の妥当性を確認してから追加する |
 | [`analytics/`](../../analytics/README.md) | 分析クエリ、Notebook、再現可能な分析コード、レビュー対象の分析結果 | 原データ、指標定義の正本、アプリケーション本体、個人用の試行ファイル | 入力と定義を参照し、分析方法・結果の正本になり得る。指標定義は複製しない | 案内 README は実装済み。目的、入力、出力、実行環境、再現手順、保守責任が決まった分析単位から追加する |
-| `.github/` | GitHub 上の Issue・PR・自動化を Repository として管理する設定 | プロジェクト本文、指標定義、データ、GitHub Project の変動状態 | GitHub 機能の構成ファイル。プロジェクト情報の正本を重複保持しない | 別 Lv2「Issue・PR の管理方式を整備する」で運用方式を決定後、必要な設定だけを追加する |
+| [`.github/`](../../.github/) | GitHub 上の Issue・Pull Request 作成を補助するテンプレートと、後続 Issue で必要性を決める設定 | プロジェクト本文、管理ルールの正本、指標定義、データ、GitHub Project の変動状態 | テンプレートは入力補助であり、[`issue-pr-management.md`](issue-pr-management.md) の共通ルールを再定義しない | Issue・Pull Request テンプレートは実装済み。自動化や追加設定は運用方式を Issue で決定してから必要なものだけ追加する |
 
 `docs/` 内の番号付き分類は表示順を安易に固定するためには増やしません。既存の `00_project/` はプロジェクト横断文書の領域として維持し、新しい分類は複数の文書を継続的にまとめる必要が生じた場合に限ります。`definitions/`、`data/`、`analytics/` のサブディレクトリも、実際の成果物から共通の分類軸を確認してから設けます。
 
@@ -126,8 +138,9 @@ Issue で目的、利用者、配置対象、既存の正本との境界、更�
 | Lv3-1（完了） | 本文書 Draft v0.1 の作成、構成・配置・命名・変更基準の確定 | 他ファイルの変更、各トップレベルディレクトリの物理作成 |
 | Lv3-2（完了） | `docs/README.md` と `decisions/README.md` の作成、`decisions/` の物理作成 | Decision Record の詳細様式や個別記録を、合意なく先行作成すること |
 | Lv3-3（完了） | `definitions/README.md`、`data/README.md`、`analytics/README.md` と各領域の物理作成 | 実際の指標、実データ、分析ロジック、不要なサブディレクトリの先行作成 |
-| 本 Issue（統合、Lv3） | Repository README、文書管理ルール、構成ガイド、各案内 README の参照導線と実装状態を統合 | 未作成成果物へのリンク、本文書と同じ配置ルールの重複管理 |
-| 別 Lv2 | `.github/` 配下の Issue・PR テンプレート、workflow などの設計と実装 | プロジェクト成果物の配置変更 |
+| Repository 構成 Lv3-4（Issue #18・完了） | Repository README、文書管理ルール、構成ガイド、各案内 README の参照導線と実装状態を統合 | 未作成成果物へのリンク、本文書と同じ配置ルールの重複管理 |
+| Issue・PR 管理 Lv3-2／Lv3-3（Issues #23・#25・完了） | `.github/ISSUE_TEMPLATE/` 配下の Lv1〜Lv4 Issue テンプレートと Pull Request テンプレートの実装 | workflow、CODEOWNERS、Rulesets など対象外の設定 |
+| Issue・PR 管理 Lv3-4（Issue #27） | Repository 入口、正本一覧、構成ガイド、管理ルール、Project README 原稿の参照導線と実装状態を統合 | テンプレート本文の変更、未実装設定の先行追加 |
 
 Lv3-1〜Lv3-3 の初期構成は実装済みです。個別成果物の要件によって本文書の前提を変える必要が生じた場合は、独自判断で構成を増やさず変更 Issue と Pull Request で本文書を更新します。
 
