@@ -138,9 +138,9 @@ Issue で目的、利用者、配置対象、既存の正本との境界、更�
 | Lv3-1（完了） | 本文書 Draft v0.1 の作成、構成・配置・命名・変更基準の確定 | 他ファイルの変更、各トップレベルディレクトリの物理作成 |
 | Lv3-2（完了） | `docs/README.md` と `decisions/README.md` の作成、`decisions/` の物理作成 | Decision Record の詳細様式や個別記録を、合意なく先行作成すること |
 | Lv3-3（完了） | `definitions/README.md`、`data/README.md`、`analytics/README.md` と各領域の物理作成 | 実際の指標、実データ、分析ロジック、不要なサブディレクトリの先行作成 |
-| 本 Issue（統合、Lv3） | Repository README、文書管理ルール、構成ガイド、各案内 README の参照導線と実装状態を統合 | 未作成成果物へのリンク、本文書と同じ配置ルールの重複管理 |
-| Issue・PR 管理 Lv3-2／Lv3-3（完了） | `.github/ISSUE_TEMPLATE/` 配下の Lv1〜Lv4 Issue テンプレートと Pull Request テンプレートの実装 | workflow、CODEOWNERS、Rulesets など対象外の設定 |
-| Issue・PR 管理 Lv3-4（本 Issue） | Repository 入口、正本一覧、構成ガイド、管理ルール、Project README 原稿の参照導線と実装状態を統合 | テンプレート本文の変更、未実装設定の先行追加 |
+| Repository 構成 Lv3-4（Issue #18・完了） | Repository README、文書管理ルール、構成ガイド、各案内 README の参照導線と実装状態を統合 | 未作成成果物へのリンク、本文書と同じ配置ルールの重複管理 |
+| Issue・PR 管理 Lv3-2／Lv3-3（Issues #23・#25・完了） | `.github/ISSUE_TEMPLATE/` 配下の Lv1〜Lv4 Issue テンプレートと Pull Request テンプレートの実装 | workflow、CODEOWNERS、Rulesets など対象外の設定 |
+| Issue・PR 管理 Lv3-4（Issue #27） | Repository 入口、正本一覧、構成ガイド、管理ルール、Project README 原稿の参照導線と実装状態を統合 | テンプレート本文の変更、未実装設定の先行追加 |
 
 Lv3-1〜Lv3-3 の初期構成は実装済みです。個別成果物の要件によって本文書の前提を変える必要が生じた場合は、独自判断で構成を増やさず変更 Issue と Pull Request で本文書を更新します。
 

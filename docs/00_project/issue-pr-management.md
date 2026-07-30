@@ -223,7 +223,7 @@ Project View はこれらの正本を置き換えず、現在状態を表示し�
 | --- | --- | --- | --- |
 | Lv3-2 | [Lv1〜Lv4 Issue テンプレート](../../.github/ISSUE_TEMPLATE/) | 本文書の階層、パターン、ライフサイクルを起票時の入力項目へ反映する | 実装済み |
 | Lv3-3 | [Pull Request テンプレート](../../.github/pull_request_template.md) | 本文書の関連付け、確認項目、レビュー運用を作成時の入力項目へ反映する | 実装済み |
-| Lv3-4 | Repository 入口、正本一覧、構成ガイド、本文書、GitHub Project README 原稿の参照導線と現在状態を統合する | テンプレート本文や管理方式を再設計せず、実在する成果物を一貫して案内する | 統合作業中 |
+| Lv3-4 | Repository 入口、正本一覧、構成ガイド、本文書、GitHub Project README 原稿の参照導線と現在状態を統合する | テンプレート本文や管理方式を再設計せず、実在する成果物を一貫して案内する | PR #28 で統合 |
 
 テンプレートは本文書の共通ルールを再定義しません。ラベル、Automation、Project フィールド、Rulesets、CODEOWNERS、GitHub Actions などは未実装であり、必要な場合は後続 Issue で対象範囲と運用方式を定めます。
 
