@@ -103,6 +103,9 @@ Phase の詳細な目的、開始・完了条件、依存関係は、後続で�
 | プロジェクト憲章 | 背景、目的、定義、原則、スコープ、成功状態の詳細 | [`docs/00_project/charter.md`](docs/00_project/charter.md) |
 | 文書管理ルール | 情報種別ごとの正本、更新責任、参照・同期ルール | [`docs/00_project/document-governance.md`](docs/00_project/document-governance.md) |
 | Repository 構成ガイド | 物理配置、領域の責務境界、構成変更の判断基準 | [`docs/00_project/repository-structure.md`](docs/00_project/repository-structure.md) |
+| Issue・Pull Request 管理ルール | Issue 階層、ライフサイクル、関連付け、状態管理 | [`docs/00_project/issue-pr-management.md`](docs/00_project/issue-pr-management.md) |
+| Issue テンプレート | Lv1〜Lv4 Issue 起票時の入力補助 | [`.github/ISSUE_TEMPLATE/`](.github/ISSUE_TEMPLATE/) |
+| Pull Request テンプレート | 関連 Issue、変更範囲、確認結果、レビュー観点の入力補助 | [`.github/pull_request_template.md`](.github/pull_request_template.md) |
 | 管理文書 | `docs/` 領域の利用案内 | [`docs/README.md`](docs/README.md) |
 | 意思決定記録 | `decisions/` 領域の利用案内と現在の運用状態 | [`decisions/README.md`](decisions/README.md) |
 | 指標・共通定義 | `definitions/` 領域の利用案内 | [`definitions/README.md`](definitions/README.md) |
@@ -125,12 +128,15 @@ Phase の詳細な目的、開始・完了条件、依存関係は、後続で�
 
 文書やモデルの変更は原則として Issue で目的と完了条件を示し、Pull Request で成果物の差分と判断理由をレビューします。現在の作業の起点は [Phase 0（Issue #1）](https://github.com/yuyuyu0706/data-value-scaling/issues/1) です。
 
+階層の選択、Lv3 の分割パターン、Issue・Pull Request のライフサイクルは [Issue・Pull Request 管理ルール](docs/00_project/issue-pr-management.md) を参照してください。起票・作成時は [Issue テンプレート](.github/ISSUE_TEMPLATE/) と [Pull Request テンプレート](.github/pull_request_template.md) を入力補助として使用します。
+
 ## 関連リンク
 
 - [Phase 0：プロジェクト管理環境を整備する（Issue #1）](https://github.com/yuyuyu0706/data-value-scaling/issues/1)
 - [プロジェクト憲章と README を整備する（Issue #2）](https://github.com/yuyuyu0706/data-value-scaling/issues/2)
 - [Repository README を整備する（Issue #5）](https://github.com/yuyuyu0706/data-value-scaling/issues/5)
 - [プロジェクト憲章 Draft v0.1](docs/00_project/charter.md)
-- [文書管理ルール Draft v0.2](docs/00_project/document-governance.md)
-- [Repository 構成ガイド Draft v0.2](docs/00_project/repository-structure.md)
+- [文書管理ルール Draft v0.3](docs/00_project/document-governance.md)
+- [Repository 構成ガイド Draft v0.3](docs/00_project/repository-structure.md)
+- [Issue・Pull Request 管理ルール Draft v0.2](docs/00_project/issue-pr-management.md)
 - [GitHub Project](https://github.com/users/yuyuyu0706/projects/6/views/1)

@@ -11,8 +11,8 @@
 ## 現在の重点
 
 - **現在の Phase:** [Phase 0：プロジェクト管理環境を整備する（Issue #1）](https://github.com/yuyuyu0706/data-value-scaling/issues/1)
-- **現在の主要作業:** [プロジェクト憲章と README を整備する（Issue #2）](https://github.com/yuyuyu0706/data-value-scaling/issues/2)
-- **この README の整備状況:** [GitHub Project README を整備する（Issue #7）](https://github.com/yuyuyu0706/data-value-scaling/issues/7)
+- **現在の主要成果物:** [Issue・PRの管理方式を整備する（Issue #20）](https://github.com/yuyuyu0706/data-value-scaling/issues/20)
+- **現在の統合作業:** [Issue・PR管理の参照導線と統合品質を整備する（Issue #27）](https://github.com/yuyuyu0706/data-value-scaling/issues/27)
 
 詳細な進捗はこの README に複製せず、[Project の View](https://github.com/users/yuyuyu0706/projects/6/views/1)と各 Issue で確認します。
 
@@ -32,7 +32,7 @@ Project に存在しない View や未作成の文書を前提にせず、現在
 - **Lv3:** 設計・実装が可能な標準作業単位（原則 1 Pull Request）
 - **Lv4:** 複数 PR、並行作業、個別の完了判定が必要な場合のみ設けるタスク
 
-作業を確認するときは、まず Lv1 で現在の Phase、次に Lv2 で対象成果物を確認し、実際の設計・実装は Lv3（必要な場合のみ Lv4）からたどります。
+作業を確認するときは、まず Lv1 で現在の Phase、次に Lv2 で対象成果物を確認し、実際の設計・実装は Lv3（必要な場合のみ Lv4）からたどります。階層、分割、ライフサイクルの詳細は [Issue・Pull Request 管理ルール](https://github.com/yuyuyu0706/data-value-scaling/blob/main/docs/00_project/issue-pr-management.md) を参照してください。
 
 ## 正式文書と管理情報
 
@@ -40,7 +40,8 @@ Project に存在しない View や未作成の文書を前提にせず、現在
 | --- | --- |
 | プロジェクト概要、主要 KPI・モデル、Phase 全体像 | [Repository README](https://github.com/yuyuyu0706/data-value-scaling#readme) |
 | 背景、定義、基本原則、対象範囲、成功状態 | [プロジェクト憲章 Draft v0.1](https://github.com/yuyuyu0706/data-value-scaling/blob/main/docs/00_project/charter.md) |
-| 情報種別ごとの正本、更新責任、参照・同期ルール | [文書管理ルール Draft v0.1](https://github.com/yuyuyu0706/data-value-scaling/blob/main/docs/00_project/document-governance.md) |
+| 情報種別ごとの正本、更新責任、参照・同期ルール | [文書管理ルール Draft v0.3](https://github.com/yuyuyu0706/data-value-scaling/blob/main/docs/00_project/document-governance.md) |
+| Issue 階層、ライフサイクル、関連付け、状態管理 | [Issue・Pull Request 管理ルール Draft v0.2](https://github.com/yuyuyu0706/data-value-scaling/blob/main/docs/00_project/issue-pr-management.md) |
 | Phase、成果物、作業単位、完了条件 | [Issues](https://github.com/yuyuyu0706/data-value-scaling/issues) |
 | 現在の重点と進捗 | [GitHub Project](https://github.com/users/yuyuyu0706/projects/6/views/1) |
 | 変更差分、レビュー、変更理由の履歴 | [Pull requests](https://github.com/yuyuyu0706/data-value-scaling/pulls) |

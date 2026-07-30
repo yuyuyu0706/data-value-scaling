@@ -1,12 +1,12 @@
 # データ活用スケーリング計画 Issue・Pull Request 管理ルール
 
-> **文書版:** Draft v0.1
+> **文書版:** Draft v0.2
 >
 > **位置付け:** 本文書は、GitHub Issue と Pull Request を用いた開発単位、親子関係、ライフサイクル、完了・引継ぎ、および関連付けを定める正本です。情報種別ごとの正本と参照方向は [`document-governance.md`](document-governance.md)、物理配置は [`repository-structure.md`](repository-structure.md) に従います。
 
 ## 1. 目的と適用範囲
 
-本文書は、Phase、主要成果物、開発単位、変更差分、完了判断、および親子 Issue 間の引継ぎを一貫して管理するための共通ルールです。本 Repository の GitHub Issue、Pull Request、Project View、成果物、および今後実装する Issue・Pull Request テンプレートに適用します。
+本文書は、Phase、主要成果物、開発単位、変更差分、完了判断、および親子 Issue 間の引継ぎを一貫して管理するための共通ルールです。本 Repository の GitHub Issue、Pull Request、Project View、成果物、および実装済みの Issue・Pull Request テンプレートに適用します。
 
 Issue は計画と完了判断、Pull Request は差分とレビュー、Project View は現在状態、成果物はマージ後に有効な内容をそれぞれ管理します。Pull Request の `main` へのマージだけでは Issue を完了とせず、更新と親 Issue への引継ぎを終えてからクローズします。
 
@@ -35,7 +35,7 @@ Issue は計画と完了判断、Pull Request は差分とレビュー、Project
 | 成果物 | `main` で有効な仕様、文書、コード、定義 | 作業中の進捗、レビュー会話 | 関連する安定情報の正本 |
 | テンプレート | 起票・作成時の入力補助、記載漏れ防止 | 共通ルールそのもの、個別 Issue の最新状態 | 本文書 |
 
-参照方向は原則として **Project View → Issue、Issue → 成果物と Pull Request、Pull Request → Issue と変更対象、テンプレート → 本文書** とします。Issue や Pull Request に成果物本文または本文書のルールを複製せず、必要最小限の要約と参照先を記載します。
+参照方向は原則として **Project View → Issue、Issue → 成果物と Pull Request、Pull Request → Issue と変更対象、テンプレート → 本文書** とします。実装済みの [Lv1〜Lv4 Issue テンプレート](../../.github/ISSUE_TEMPLATE/) と [Pull Request テンプレート](../../.github/pull_request_template.md) は、この参照方向に従う入力補助です。Issue や Pull Request に成果物本文または本文書のルールを複製せず、必要最小限の要約と参照先を記載します。
 
 ## 4. Issue 階層と作成条件
 
@@ -217,15 +217,15 @@ Related Issue: #<number>
 
 Project View はこれらの正本を置き換えず、現在状態を表示します。状態変更時に View の更新が必要な運用であれば更新し、Repository 外で未実施の更新は Issue の残アクティビティへ記録します。
 
-## 10. 後続実装との境界
+## 10. 実装済み成果物と統合境界
 
-| 後続単位 | 本文書を参照して実装する内容 | 本文書で先行しない内容 | 開始条件 |
+| 実装単位 | 実装済みの内容 | 正本との関係 | 状態 |
 | --- | --- | --- | --- |
-| Lv3-2 | Lv1〜Lv4 Issue テンプレートの入力項目と選択肢 | テンプレートファイル、フォーム構成、設定 | 本文書の階層、パターン、ライフサイクルが確定し `main` へマージ済みであること |
-| Lv3-3 | Pull Request テンプレートの関連付け、確認項目、レビュー運用 | テンプレートファイル、物理配置 | 本文書の PR ライフサイクルと自動クローズ方針が確定し `main` へマージ済みであること |
-| Lv3-4 | Repository の入口、正本一覧、構成ガイドへの参照導線と統合確認 | 本 Issue での既存文書更新 | Lv3-2、Lv3-3 の実装後に、実在する成果物とリンク先を確認できること |
+| Lv3-2 | [Lv1〜Lv4 Issue テンプレート](../../.github/ISSUE_TEMPLATE/) | 本文書の階層、パターン、ライフサイクルを起票時の入力項目へ反映する | 実装済み |
+| Lv3-3 | [Pull Request テンプレート](../../.github/pull_request_template.md) | 本文書の関連付け、確認項目、レビュー運用を作成時の入力項目へ反映する | 実装済み |
+| Lv3-4 | Repository 入口、正本一覧、構成ガイド、本文書、GitHub Project README 原稿の参照導線と現在状態を統合する | テンプレート本文や管理方式を再設計せず、実在する成果物を一貫して案内する | 統合作業中 |
 
-後続テンプレートは本文書を入力補助へ落とし込み、共通ルールを再定義しません。ラベル、Automation、Project フィールド、Rulesets などが必要な場合も、各後続 Issue の明示的な対象範囲に含めない限り実装しません。
+テンプレートは本文書の共通ルールを再定義しません。ラベル、Automation、Project フィールド、Rulesets、CODEOWNERS、GitHub Actions などは未実装であり、必要な場合は後続 Issue で対象範囲と運用方式を定めます。
 
 ## 11. 運用チェックリスト
 

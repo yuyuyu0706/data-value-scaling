@@ -26,10 +26,11 @@ docs/
     ├── charter.md
     ├── document-governance.md
     ├── github-project-readme.md
+    ├── issue-pr-management.md
     └── repository-structure.md
 ```
 
-`00_project/` は、プロジェクト全体に関わる既存の管理文書を維持する領域です。現在は、プロジェクト憲章、文書管理ルール、GitHub Project の案内原稿、Repository 構成ガイドを管理しています。既存のファイルは移動・改名せず、新しい番号付き分類も、複数文書を継続的にまとめる必要が明確になるまでは追加しません。
+`00_project/` は、プロジェクト全体に関わる既存の管理文書を維持する領域です。現在は、プロジェクト憲章、文書管理ルール、GitHub Project の案内原稿、[Issue・Pull Request 管理ルール](00_project/issue-pr-management.md)、Repository 構成ガイドを管理しています。既存のファイルは移動・改名せず、新しい番号付き分類も、複数文書を継続的にまとめる必要が明確になるまでは追加しません。
 
 ## 新しい文書を追加する前に
 
@@ -44,3 +45,4 @@ docs/
 ## 関連する入口
 
 - [Repository トップ](../README.md)
+- [Issue・Pull Request 管理ルール](00_project/issue-pr-management.md)
