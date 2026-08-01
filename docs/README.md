@@ -5,6 +5,7 @@
 ## 配置するもの
 
 - プロジェクトの目的、運営、文書管理に関する文書
+- Phase 間の実行順序、成果ゲート、依存関係、引継ぎを管理する全体ロードマップ
 - 合意した方針、設計、運用手順を説明する文書
 - 人が参照することを主目的とし、既存の正本と責務が重複しない文書
 
@@ -27,10 +28,11 @@ docs/
     ├── document-governance.md
     ├── github-project-readme.md
     ├── issue-pr-management.md
-    └── repository-structure.md
+    ├── repository-structure.md
+    └── roadmap.md
 ```
 
-`00_project/` は、プロジェクト全体に関わる既存の管理文書を維持する領域です。現在は、プロジェクト憲章、文書管理ルール、GitHub Project の案内原稿、[Issue・Pull Request 管理ルール](00_project/issue-pr-management.md)、Repository 構成ガイドを管理しています。既存のファイルは移動・改名せず、新しい番号付き分類も、複数文書を継続的にまとめる必要が明確になるまでは追加しません。
+`00_project/` は、プロジェクト全体に関わる既存の管理文書を維持する領域です。現在は、プロジェクト憲章、[全体ロードマップ](00_project/roadmap.md)、文書管理ルール、GitHub Project の案内原稿、[Issue・Pull Request 管理ルール](00_project/issue-pr-management.md)、Repository 構成ガイドを管理しています。既存のファイルは移動・改名せず、新しい番号付き分類も、複数文書を継続的にまとめる必要が明確になるまでは追加しません。
 
 ## 新しい文書を追加する前に
 
@@ -45,4 +47,5 @@ docs/
 ## 関連する入口
 
 - [Repository トップ](../README.md)
+- [全体ロードマップ](00_project/roadmap.md)
 - [Issue・Pull Request 管理ルール](00_project/issue-pr-management.md)

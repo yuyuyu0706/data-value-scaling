@@ -1,6 +1,6 @@
 # データ活用スケーリング計画 Repository 構成ガイド
 
-> **文書版:** Draft v0.3
+> **文書版:** Draft v0.4
 >
 > **位置付け:** 本文書は、Repository 内の物理配置、各領域の責務境界、および構成変更の判断基準を定める正本です。情報種別ごとの正本、更新責任、参照方向は `document-governance.md` に従います。
 
@@ -31,7 +31,8 @@ Repository の入口はルートの `README.md`、情報の正本・更新・参
 │       ├── document-governance.md
 │       ├── github-project-readme.md
 │       ├── issue-pr-management.md
-│       └── repository-structure.md
+│       ├── repository-structure.md
+│       └── roadmap.md
 ├── decisions/
 │   └── README.md
 ├── definitions/
@@ -42,7 +43,7 @@ Repository の入口はルートの `README.md`、情報の正本・更新・参
     └── README.md
 ```
 
-上記は現在存在する成果物です。Issue・Pull Request テンプレートと 5 領域の案内 README は実装済みですが、個別の指標定義、Decision Record、データ、分析成果物は未作成です。既存リンクと正本を維持するため、既存ファイルは移動・改名しません。
+上記は現在存在する成果物です。全体ロードマップ、Issue・Pull Request テンプレートと 5 領域の案内 README は実装済みですが、個別の指標定義、Decision Record、データ、分析成果物は未作成です。既存リンクと正本を維持するため、既存ファイルは移動・改名しません。
 
 ### 2.2 Phase 1 開始時の初期構成
 
@@ -63,7 +64,8 @@ Repository の入口はルートの `README.md`、情報の正本・更新・参
 │       ├── document-governance.md
 │       ├── github-project-readme.md
 │       ├── issue-pr-management.md
-│       └── repository-structure.md
+│       ├── repository-structure.md
+│       └── roadmap.md
 ├── decisions/
 │   └── README.md                         # 実装済み（個別記録は未整備）
 ├── definitions/
@@ -74,7 +76,7 @@ Repository の入口はルートの `README.md`、情報の正本・更新・参
     └── README.md                         # 実装済み（個別分析は未作成）
 ```
 
-Issue・Pull Request テンプレートと 5 領域の案内 README は実装済みです。`.github/workflows/`、`CODEOWNERS`、Rulesets などの未実装設定は現在構成に含めません。空ディレクトリや将来用の空ファイルは作らず、後続 Issue で必要性と運用方式を決めた実体だけを追加します。
+全体ロードマップ、Issue・Pull Request テンプレートと 5 領域の案内 README は実装済みです。`.github/workflows/`、`CODEOWNERS`、Rulesets などの未実装設定は現在構成に含めません。空ディレクトリや将来用の空ファイルは作らず、後続 Issue で必要性と運用方式を決めた実体だけを追加します。
 
 ## 3. 領域ごとの責務
 

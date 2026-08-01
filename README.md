@@ -81,7 +81,7 @@
 
 ## ロードマップ概要と現在地（Draft）
 
-Phase の詳細な目的、開始・完了条件、依存関係は、後続で作成するロードマップにおいて定義します。以下は現時点の方向性であり、前 Phase の学びに応じて更新します。
+Phase の詳細な目的、主要成果物、開始・完了条件、依存関係、引継ぎは、正本である[全体ロードマップ Draft v0.2](docs/00_project/roadmap.md)で管理します。以下は入口としての短い要約です。
 
 | Phase | 方向性 | 状態 |
 | --- | --- | --- |
@@ -93,7 +93,7 @@ Phase の詳細な目的、開始・完了条件、依存関係は、後続で�
 | 5 | データ活用バランスシートを構築する | Draft |
 | 6 | データ活用スケーリング計画へ統合する | Draft |
 
-進捗の詳細は [GitHub Project](https://github.com/users/yuyuyu0706/projects/6/views/1) と各 Issue で管理します。未作成のロードマップや設計文書へのリンクは、ファイルが追加された後に設けます。
+現在の進捗は [GitHub Project](https://github.com/users/yuyuyu0706/projects/6/views/1) と各 Issue で管理し、Phase 間の計画は[全体ロードマップ](docs/00_project/roadmap.md)を参照します。
 
 ## 成果物・管理情報
 
@@ -101,6 +101,7 @@ Phase の詳細な目的、開始・完了条件、依存関係は、後続で�
 | --- | --- | --- |
 | Repository README | プロジェクト概要と主要情報への入口 | 本文書 |
 | プロジェクト憲章 | 背景、目的、定義、原則、スコープ、成功状態の詳細 | [`docs/00_project/charter.md`](docs/00_project/charter.md) |
+| 全体ロードマップ | Phase 0〜6 の実行順序、成果ゲート、依存関係、引継ぎ | [`docs/00_project/roadmap.md`](docs/00_project/roadmap.md) |
 | 文書管理ルール | 情報種別ごとの正本、更新責任、参照・同期ルール | [`docs/00_project/document-governance.md`](docs/00_project/document-governance.md) |
 | Repository 構成ガイド | 物理配置、領域の責務境界、構成変更の判断基準 | [`docs/00_project/repository-structure.md`](docs/00_project/repository-structure.md) |
 | Issue・Pull Request 管理ルール | Issue 階層、ライフサイクル、関連付け、状態管理 | [`docs/00_project/issue-pr-management.md`](docs/00_project/issue-pr-management.md) |
@@ -115,7 +116,7 @@ Phase の詳細な目的、開始・完了条件、依存関係は、後続で�
 | GitHub Project | 現在の重点と進捗の管理 | [Projects](https://github.com/users/yuyuyu0706/projects/6/views/1) |
 | Pull Requests | 成果物の変更、レビュー、変更理由の履歴 | [Pull requests](https://github.com/yuyuyu0706/data-value-scaling/pulls) |
 
-上表の各領域 README は追加済みの利用案内です。個別のロードマップ、運営モデル、指標定義、Decision Record、データ、分析成果物は未作成であり、実体が追加されるまではこの README からリンクしません。
+上表の各領域 README と全体ロードマップは追加済みです。運営モデル、指標定義、Decision Record、データ、分析成果物は未作成であり、実体が追加されるまではこの README からリンクしません。
 
 ## Issue 階層と開発の進め方
 
@@ -136,7 +137,8 @@ Phase の詳細な目的、開始・完了条件、依存関係は、後続で�
 - [プロジェクト憲章と README を整備する（Issue #2）](https://github.com/yuyuyu0706/data-value-scaling/issues/2)
 - [Repository README を整備する（Issue #5）](https://github.com/yuyuyu0706/data-value-scaling/issues/5)
 - [プロジェクト憲章 Draft v0.1](docs/00_project/charter.md)
-- [文書管理ルール Draft v0.3](docs/00_project/document-governance.md)
-- [Repository 構成ガイド Draft v0.3](docs/00_project/repository-structure.md)
+- [全体ロードマップ Draft v0.2](docs/00_project/roadmap.md)
+- [文書管理ルール Draft v0.4](docs/00_project/document-governance.md)
+- [Repository 構成ガイド Draft v0.4](docs/00_project/repository-structure.md)
 - [Issue・Pull Request 管理ルール Draft v0.2](docs/00_project/issue-pr-management.md)
 - [GitHub Project](https://github.com/users/yuyuyu0706/projects/6/views/1)
