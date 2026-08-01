@@ -1,6 +1,6 @@
 # データ活用スケーリング計画 文書管理ルール
 
-> **文書版:** Draft v0.3
+> **文書版:** Draft v0.4
 >
 > **位置付け:** 本文書は、プロジェクトの情報種別ごとの正本（Source of Truth）、更新方法、参照方向を定める正本です。文書の新設・変更時は本ルールを適用します。
 
@@ -16,6 +16,7 @@
 | --- | --- | --- | --- | --- | --- |
 | プロジェクトの背景・目的・主要概念・原則・対象範囲・成功状態 | [`charter.md`](charter.md) | 長期的で安定した判断基準 | 当該変更の Issue 担当者 | 目的、原則、スコープ、主要な定義または成功状態の合意変更 | Repository README、設計文書、Issue |
 | プロジェクト概要と主要情報への入口 | [`README.md`](../../README.md) | 憲章の要約、主要モデルと Phase の概観、存在する成果物への導線 | 入口または成果物を変更する Issue 担当者 | 主要な参照先、全体像、現在 Phase の変更 | Repository トップ |
+| Phase 0〜6の実行順序、成果ゲート、依存関係、引継ぎ | [`roadmap.md`](roadmap.md) | Phase間の計画と、各Phaseを開始・完了する判断基準 | ロードマップを変更する Issue 担当者 | Phaseの目的、成果ゲート、依存関係、引継ぎまたは確度の合意変更 | Repository README、docs README、GitHub Project README、各Lv1 Issue |
 | 文書管理ルール | 本文書 | 正本、責務、更新・レビュー・参照・同期の共通ルール | 文書管理を変更する Issue 担当者 | 情報種別、正本、配置、参照または運用方法の変更 | Repository README、GitHub Project README、各成果物 |
 | Repository の物理配置と領域の責務境界 | [`repository-structure.md`](repository-structure.md) | 現在の構成、配置判断、命名、構成変更基準 | Repository 構成を変更する Issue 担当者 | 領域、配置、命名または構成変更基準の変更 | Repository README、各領域 README、成果物追加 Issue |
 | Issue・Pull Request の管理ルール | [`issue-pr-management.md`](issue-pr-management.md) | Issue 階層と分割、Issue・Pull Request のライフサイクル、関連付け、状態管理 | Issue・Pull Request 運用を変更する Issue 担当者 | 階層、ライフサイクル、関連付けまたは状態管理の変更 | Repository README、Issue・Pull Request、テンプレート |
@@ -28,21 +29,22 @@
 | GitHub Project に表示する利用案内 | GitHub Project 本体の README | Repository 原稿の公開コピー（独自情報は持たない） | 原稿を変更する Pull Request の作成者または引継ぎ先 | Repository 原稿の変更がレビューされた後 | GitHub Project 利用者 |
 | 永続的で複数成果物へ影響する設計判断 | Decision Record（整備後） | 判断、選択肢、理由、影響 | 判断を行う Issue 担当者 | 永続的な横断判断の合意 | Issue、設計文書、Pull Request |
 
-5 領域の案内 README は追加済みですが、個別のロードマップ、運営モデル、指標定義、Decision Record、データ、分析成果物は未作成です。後続 Issue で目的、利用者、更新責任、既存の正本との境界を決め、実体が `main` に追加された後にこの表と入口文書へ追記します。
+5 領域の案内 README と全体ロードマップは追加済みです。運営モデル、指標定義、Decision Record、データ、分析成果物は未作成です。後続 Issue で目的、利用者、更新責任、既存の正本との境界を決め、実体が `main` に追加された後にこの表と入口文書へ追記します。
 
 Decision Record の仕組みが整備されるまでは、永続的で複数成果物へ影響する判断を、関連 Issue の「重要な設計判断・論点」に理由と影響先を添えて記録します。将来の配置、テンプレート、採番方式を本 Draft では固定しません。
 
 ## 3. 各媒体の責務と参照方向
 
-- **Repository README** は全体像を短く示す入口です。詳細な安定情報は憲章へ、現在の進捗は Project View と Issue へ、文書の扱いは本文書へ誘導します。
+- **Repository README** と **docs README** は全体像や管理文書を短く示す入口です。詳細な安定情報は憲章へ、Phase間の計画はロードマップへ、現在の進捗は Project View と Issue へ、文書の扱いは本文書へ誘導します。
 - **プロジェクト憲章** は長期的な判断基準の正本です。作業状況、詳細な実行順序、変更頻度の高い指標は管理しません。
+- **全体ロードマップ** は Phase 間の実行順序、成果ゲート、依存関係、引継ぎの正本です。各 Phase の変動する現在状態や実行計画は管理しません。
 - **GitHub Project README** は Project の利用方法と主要な確認先を案内します。安定情報や Issue ごとの詳細進捗を独立管理しません。
 - **Project View** は現在状態を表示します。目的や完了条件を再記述せず、対応する Issue を参照します。
 - **Issue** は実施単位の計画と完了判断を管理します。成果物本文や差分を複製せず、ファイルと Pull Request を参照します。
 - **Pull Request** は差分、レビュー、変更理由を残します。固定的な説明の正本にはせず、マージ後の有効な内容は成果物から読めるようにします。
 - **Issue・Pull Request テンプレート** は入力補助と記載漏れ防止のために使用します。共通ルールを再定義せず、[Issue・Pull Request 管理ルール](issue-pr-management.md) を参照します。
 
-参照方向は、原則として **入口 → 正本、Project View → Issue、Issue → 成果物と Pull Request、Pull Request → Issue と変更対象、テンプレート → Issue・Pull Request 管理ルール** とします。正本側から入口の要約へ戻って内容を補完する構造にはしません。
+参照方向は、原則として **Repository README・docs README・GitHub Project README → ロードマップを含む各正本、Project View → Issue、Issue → 成果物と Pull Request、Pull Request → Issue と変更対象、テンプレート → Issue・Pull Request 管理ルール** とします。正本側から入口の要約へ戻って内容を補完する構造にはしません。
 
 ## 4. 文書の追加・更新ルール
 
