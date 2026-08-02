@@ -11,7 +11,7 @@
 ## 現在の重点
 
 - **現在の Phase:** [Phase 0：プロジェクト管理環境を整備する（Issue #1）](https://github.com/yuyuyu0706/data-value-scaling/issues/1)
-- **現在の整備作業:** [Just-in-Time起票方針とPhase 1の参照導線を整備する（Issue #37）](https://github.com/yuyuyu0706/data-value-scaling/issues/37)
+- **現在の整備作業:** [統合確認と親Issue引継ぎを実施する（Issue #42）](https://github.com/yuyuyu0706/data-value-scaling/issues/42)
 - **次に着手する候補 Phase:** [Phase 1：指標モデルの共通言語を定義する（Issue #36）](https://github.com/yuyuyu0706/data-value-scaling/issues/36)（計画中・Lv1 Issue 起票済み）
 
 詳細な進捗はこの README に複製せず、[Project の View](https://github.com/users/yuyuyu0706/projects/6/views/1)と各 Issue で確認します。
