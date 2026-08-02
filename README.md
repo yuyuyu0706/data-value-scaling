@@ -81,19 +81,19 @@
 
 ## ロードマップ概要と現在地（Draft）
 
-Phase の詳細な目的、主要成果物、開始・完了条件、依存関係、引継ぎは、正本である[全体ロードマップ Draft v0.2](docs/00_project/roadmap.md)で管理します。以下は入口としての短い要約です。
+Phase の詳細な目的、主要成果物、開始・完了条件、依存関係、引継ぎは、正本である[全体ロードマップ Draft v0.3](docs/00_project/roadmap.md)で管理します。以下は入口としての短い要約です。
 
 | Phase | 方向性 | 状態 |
 | --- | --- | --- |
 | 0 | プロジェクト管理環境を整備する | **進行中** |
-| 1 | 指標モデルの共通言語を定義する | 計画中 |
+| 1 | [指標モデルの共通言語を定義する](https://github.com/yuyuyu0706/data-value-scaling/issues/36) | 計画中（Lv1 Issue 起票済み） |
 | 2 | データ価値キャッシュフローMVPを構築する | Draft |
 | 3 | 価値実現スコアカードを構築する | Draft |
 | 4 | データ活用損益計算書を構築する | Draft |
 | 5 | データ活用バランスシートを構築する | Draft |
 | 6 | データ活用スケーリング計画へ統合する | Draft |
 
-現在の進捗は [GitHub Project](https://github.com/users/yuyuyu0706/projects/6/views/1) と各 Issue で管理し、Phase 間の計画は[全体ロードマップ](docs/00_project/roadmap.md)を参照します。
+現在の Phase と作業の起点は [Phase 0（Issue #1）](https://github.com/yuyuyu0706/data-value-scaling/issues/1)、次に着手する候補 Phase の実行計画は [Phase 1（Issue #36）](https://github.com/yuyuyu0706/data-value-scaling/issues/36)で確認できます。現在の進捗は [GitHub Project](https://github.com/users/yuyuyu0706/projects/6/views/1) と各 Issue で管理し、Phase 間の計画は[全体ロードマップ](docs/00_project/roadmap.md)を参照します。
 
 ## 成果物・管理情報
 
@@ -137,8 +137,8 @@ Phase の詳細な目的、主要成果物、開始・完了条件、依存関�
 - [プロジェクト憲章と README を整備する（Issue #2）](https://github.com/yuyuyu0706/data-value-scaling/issues/2)
 - [Repository README を整備する（Issue #5）](https://github.com/yuyuyu0706/data-value-scaling/issues/5)
 - [プロジェクト憲章 Draft v0.1](docs/00_project/charter.md)
-- [全体ロードマップ Draft v0.2](docs/00_project/roadmap.md)
+- [全体ロードマップ Draft v0.3](docs/00_project/roadmap.md)
 - [文書管理ルール Draft v0.4](docs/00_project/document-governance.md)
 - [Repository 構成ガイド Draft v0.4](docs/00_project/repository-structure.md)
-- [Issue・Pull Request 管理ルール Draft v0.2](docs/00_project/issue-pr-management.md)
+- [Issue・Pull Request 管理ルール Draft v0.3](docs/00_project/issue-pr-management.md)
 - [GitHub Project](https://github.com/users/yuyuyu0706/projects/6/views/1)
