@@ -11,8 +11,8 @@
 ## 現在の重点
 
 - **現在の Phase:** [Phase 0：プロジェクト管理環境を整備する（Issue #1）](https://github.com/yuyuyu0706/data-value-scaling/issues/1)
-- **現在の主要成果物:** [全体ロードマップを策定する（Issue #29）](https://github.com/yuyuyu0706/data-value-scaling/issues/29)
-- **現在の統合作業:** [ロードマップの参照導線と統合品質を整備する（Issue #32）](https://github.com/yuyuyu0706/data-value-scaling/issues/32)
+- **現在の整備作業:** [Just-in-Time起票方針とPhase 1の参照導線を整備する（Issue #37）](https://github.com/yuyuyu0706/data-value-scaling/issues/37)
+- **次に着手する候補 Phase:** [Phase 1：指標モデルの共通言語を定義する（Issue #36）](https://github.com/yuyuyu0706/data-value-scaling/issues/36)（計画中・Lv1 Issue 起票済み）
 
 詳細な進捗はこの README に複製せず、[Project の View](https://github.com/users/yuyuyu0706/projects/6/views/1)と各 Issue で確認します。
 
@@ -40,9 +40,9 @@ Project に存在しない View や未作成の文書を前提にせず、現在
 | --- | --- |
 | プロジェクト概要、主要 KPI・モデル、Phase の短い要約 | [Repository README](https://github.com/yuyuyu0706/data-value-scaling#readme) |
 | 背景、定義、基本原則、対象範囲、成功状態 | [プロジェクト憲章 Draft v0.1](https://github.com/yuyuyu0706/data-value-scaling/blob/main/docs/00_project/charter.md) |
-| Phase 0〜6の実行順序、成果ゲート、依存関係、引継ぎ | [全体ロードマップ Draft v0.2](https://github.com/yuyuyu0706/data-value-scaling/blob/main/docs/00_project/roadmap.md) |
+| Phase 0〜6の実行順序、成果ゲート、依存関係、引継ぎ | [全体ロードマップ Draft v0.3](https://github.com/yuyuyu0706/data-value-scaling/blob/main/docs/00_project/roadmap.md) |
 | 情報種別ごとの正本、更新責任、参照・同期ルール | [文書管理ルール Draft v0.4](https://github.com/yuyuyu0706/data-value-scaling/blob/main/docs/00_project/document-governance.md) |
-| Issue 階層、ライフサイクル、関連付け、状態管理 | [Issue・Pull Request 管理ルール Draft v0.2](https://github.com/yuyuyu0706/data-value-scaling/blob/main/docs/00_project/issue-pr-management.md) |
+| Issue 階層、ライフサイクル、Just-in-Time起票、関連付け、状態管理 | [Issue・Pull Request 管理ルール Draft v0.3](https://github.com/yuyuyu0706/data-value-scaling/blob/main/docs/00_project/issue-pr-management.md) |
 | Phase、成果物、作業単位、完了条件 | [Issues](https://github.com/yuyuyu0706/data-value-scaling/issues) |
 | 現在の重点と進捗 | [GitHub Project](https://github.com/users/yuyuyu0706/projects/6/views/1) |
 | 変更差分、レビュー、変更理由の履歴 | [Pull requests](https://github.com/yuyuyu0706/data-value-scaling/pulls) |
